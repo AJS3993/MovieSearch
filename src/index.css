@@ -25,3 +25,17 @@ main {
   max-width: 960px;
   margin: 0 auto;
 }
+
+section {
+  padding: 15px;
+}
+
+.searchbox {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  outline: none;
+  background: none;
+}
