@@ -14,7 +14,9 @@ function App() {
 
   const search = (e) => {
     if (e.key === "Enter"){
-
+      axios(apiurl + "&s=" + state.s).then((data) =>{
+        console.log(data)
+      })
     }
   }
 
@@ -32,7 +34,7 @@ function App() {
         <h1>Movie Search</h1>
       </header>
       <main>
-        <Search handleInput={handleInput}/>
+        <Search handleInput={handleInput} search={search}/>
       </main>
     </div>
   );
